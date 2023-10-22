@@ -1,0 +1,32 @@
+[
+    {
+        "name": "token",
+        "value": "BjlPXgUONBhgxUVGLFuyuaDHpRZSyMBPgFoNTrCwlbCgYHDAtFwrkQdEAQIfAvubMqUWaOAxyICUeDTncLOnzJpLKnpuuTrnAkQEhSjBzSjRqEzSEPLGSRoeTHBSGwuT",
+        "domain": ".huggingface.co",
+        "hostOnly": false,
+        "path": "/",
+        "secure": true,
+        "httpOnly": true,
+        "sameSite": "lax",
+        "session": false,
+        "firstPartyDomain": "",
+        "partitionKey": null,
+        "expirationDate": 1725907327,
+        "storeId": null
+    },
+    {
+        "name": "hf-chat",
+        "value": "8174b757-4011-440a-af43-896088120097",
+        "domain": "huggingface.co",
+        "hostOnly": true,
+        "path": "/",
+        "secure": true,
+        "httpOnly": true,
+        "sameSite": "no_restriction",
+        "session": false,
+        "firstPartyDomain": "",
+        "partitionKey": null,
+        "expirationDate": 1725993736,
+        "storeId": null
+    }
+]

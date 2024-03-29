@@ -18,7 +18,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = BASE_DIR.parent / 'frontend'
 
 STATIC_ROOT = BASE_DIR / 'static'
-STATICFILES_DIRS = [FRONTEND_DIR / 'build' / 'static']
+
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path. join(BASE_DIR, 'staticfiles_build', 'static')
 
 WHITENOISE_ROOT = FRONTEND_DIR / 'build' / 'root'
 
@@ -32,7 +34,7 @@ SECRET_KEY = 'django-insecure-3*4!@f2*l-_0!xe)901$k@6dqd29^^5($dvdwe1tu04y=cg(-)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','localhost','127.0.0.1']
 
 
 # Application definition
@@ -66,6 +68,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
   'http://localhost:3000',
   'http://localhost:8000',
+  '.vercel.app',
+  '.now.sh'
 )
 
 ROOT_URLCONF = 'Ezmail.urls'
@@ -92,13 +96,17 @@ WSGI_APPLICATION = 'Ezmail.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
+DATABASES ={
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'MyaVajQEPSVcATUdpjxUEkIakvqpfuOj',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '28394',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

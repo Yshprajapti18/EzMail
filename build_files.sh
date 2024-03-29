@@ -1,4 +1,4 @@
-python3.9 -m ensurepip --default-pip
-python3.9 -m pip install --upgrade pip
+python3.11 -m ensurepip --default-pip
+python3.11 -m pip install --upgrade pip
 pip install -r requirements.txt
-python3.9 manage.py collectstatic
+python3.11 manage.py collectstatic

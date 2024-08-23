@@ -1,4 +1,5 @@
 # EZMAIL
+![image](https://github.com/user-attachments/assets/6997dcd9-7eca-4c07-93f2-ce817eb64b96)
 
 EZMAIL is an Email Manager application designed to keep track of important mails and provide insightful analytics through a user-friendly dashboard.
 
@@ -15,5 +16,4 @@ EZMAIL is an Email Manager application designed to keep track of important mails
 - **API**: Hugging Face for NLP integration
 - **REST API**: Enables seamless communication between frontend and backend
 
-![image](https://github.com/user-attachments/assets/6997dcd9-7eca-4c07-93f2-ce817eb64b96)
 
